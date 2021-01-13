@@ -25,7 +25,7 @@ function App() {
     <StyledApp>
       {
         data ? data.map(d => 
-        <span>{d.message}</span>
+        <span key={d.message}>{d.message}</span>
       ) : <span>There is no data</span>
       }
       
